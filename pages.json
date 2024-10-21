@@ -1,0 +1,595 @@
+{
+	"easycom": {
+        "autoscan": true,
+        "custom": {
+            "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+            // "^vue-file-(.*)": "packageName/path/to/vue-file-$1.vue" // 匹配node_modules内的vue文件
+        }
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path" : "pages/firing",
+			"style" :{
+				"navigationBarTitleText": "Loading",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom",
+				"navigationBarBackgroundColor": "#f8f8f8"
+			}
+		},
+		{
+			"path" : "pages/iframe-web",
+			"style" :{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom",
+				"navigationBarBackgroundColor": "#f8f8f8"
+			}
+		},
+        {
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "Tiger Jobs",
+				"navigationStyle": "custom" ,
+				"onReachBottomDistance": 50,
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/index/job-list",
+			"style": {
+				"navigationBarTitleText": "Tiger Jobs",
+				"navigationStyle": "custom" ,
+				"onReachBottomDistance": 50,
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/index/companyJobs",
+			"style": {
+				"navigationBarTitleText": "Tiger Jobs",
+				"navigationStyle": "custom" ,
+				"onReachBottomDistance": 5
+			}
+		},
+		{
+			"path": "pages/search/index-search",
+			"style": {
+				"navigationBarTitleText": "Tiger JOBS Search",
+				"onReachBottomDistance": 50,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/resume/index",
+			"style": {
+				"navigationBarTitleText": "Tiger Resume",
+				"navigationStyle": "custom" ,
+				"onReachBottomDistance": 50,
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/resume/details",
+			"style": {
+				"navigationBarTitleText": "TigerCV",
+				"navigationStyle": "custom" ,
+				"onReachBottomDistance": 50,
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/resume/upload",
+			"style": {
+				"navigationBarTitleText": "TigerCV",
+				"navigationStyle": "custom" ,
+				"onReachBottomDistance": 50,
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/resume/preview",
+			"style": {
+				"navigationBarTitleText": "TigerCV",
+				"navigationStyle": "custom" ,
+				"onReachBottomDistance": 50,
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/resume/previewSend",
+			"style": {
+				"navigationBarTitleText": "TigerCV",
+				"navigationStyle": "custom" ,
+				"onReachBottomDistance": 50,
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/resume/school",
+			"style": {
+				"navigationBarTitleText": "TigerCV",
+				"navigationStyle": "custom" ,
+				"onReachBottomDistance": 50,
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/resume/job",
+			"style": {
+				"navigationBarTitleText": "TigerCV",
+				"navigationStyle": "custom" ,
+				"onReachBottomDistance": 50,
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/resume/language",
+			"style": {
+				"navigationBarTitleText": "TigerCV",
+				"navigationStyle": "custom" ,
+				"onReachBottomDistance": 50,
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/resume/skill",
+			"style": {
+				"navigationBarTitleText": "TigerCV",
+				"navigationStyle": "custom" ,
+				"onReachBottomDistance": 50,
+			    "enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/resume/resumeShare",
+			"style": {
+				"navigationBarTitleText": "TigerCV",
+				"navigationStyle": "custom" ,
+				"onReachBottomDistance": 50,
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/resume/resumeSend",
+			"style": {
+				"navigationBarTitleText": "TigerCV",
+				"navigationStyle": "custom" ,
+				"onReachBottomDistance": 50,
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/resume/record",
+			"style": {
+				"navigationBarTitleText": "TigerCV",
+				"navigationStyle": "custom" ,
+				"onReachBottomDistance": 50,
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/resume/recordDetail",
+			"style": {
+				"navigationBarTitleText": "TigerCV",
+				"navigationStyle": "custom" ,
+				"onReachBottomDistance": 50,
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/resume/companyDetail",
+			"style": {
+				"navigationBarTitleText": "TigerCV",
+				"navigationStyle": "custom" ,
+				"onReachBottomDistance": 50,
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/resume/jobDetail",
+			"style": {
+				"navigationBarTitleText": "TigerCV",
+				"navigationStyle": "custom" ,
+				"onReachBottomDistance": 50,
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+            "path" : "pages/templates/index",
+            "style" :
+            {
+                "navigationBarTitleText": "TigerCV",
+                "enablePullDownRefresh": false,
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+            }
+        },
+        {
+            "path" : "pages/center/login",
+            "style" :
+            {
+                "navigationBarTitleText": "Sign in",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+            }
+        },
+		{
+		    "path" : "pages/center/login_up",
+		    "style" :
+		    {
+		        "navigationBarTitleText": "Sign in",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+		    }
+		},
+		{
+		    "path" : "pages/center/register_up",
+		    "style" :
+		    {
+		        "navigationBarTitleText": "Sign up",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+		    }
+		},
+		{
+		    "path" : "pages/center/agree",
+		    "style" :
+		    {
+		        "navigationBarTitleText": "agree",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+		    }
+		},
+        {
+            "path" : "pages/session-info/session-info",
+            "style" :
+            {
+                "navigationBarTitleText": "Tiger Message",
+                "enablePullDownRefresh": false,
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "black"
+            }
+        },
+		{
+		    "path" : "pages/message/message",
+		    "style" :
+		    {
+				"navigationBarTitleText": "Tiger Message",
+		        "navigationStyle": "custom" ,
+				"onReachBottomDistance": 100,
+		        "enablePullDownRefresh": true
+		    }
+		},
+		{
+			"path": "pages/center/index",
+			"style": {
+				"navigationBarTitleText": "Tiger Personal",
+				"navigationStyle": "custom" ,
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/center/primecard",
+			"style": {
+				"navigationBarTitleText": "Tiger Primecard",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/center/about",
+			"style": {
+				"navigationBarTitleText": "Tiger About",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/center/questionnaire",
+			"style": {
+				"navigationBarTitleText": "TigerCV",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/center/donationRecords",
+			"style": {
+				"navigationBarTitleText": "Tiger DonationRecords",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/center/recommendation",
+			"style": {
+				"navigationBarTitleText": "Tiger Recommendation",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/center/invitingRecords",
+			"style": {
+				"navigationBarTitleText": "Tiger InvitingRecords",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+		    "path" : "pages/address-list/address-list",
+		    "style" :
+		    {
+		        "navigationBarTitleText": "Tiger Address Book",
+		        "enablePullDownRefresh": true
+		    }
+		},
+		{
+		    "path" : "pages/center/register",
+		    "style" :
+		    {
+		        "navigationBarTitleText": "Tiger Register",
+		        "enablePullDownRefresh": false,
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+		    }
+		},
+		{
+		    "path" : "pages/search/search",
+		    "style" :
+		    {
+		        "navigationBarTitleText": "Tiger Search",
+		        "enablePullDownRefresh": false
+		    }
+		},
+		{
+		    "path" : "pages/center/to-do",
+		    "style" :
+		    {
+		        "navigationBarTitleText": "need to be dealt with",
+		        "enablePullDownRefresh": true
+		    }
+		},
+		{
+		    "path" : "pages/search/new-contact",
+		    "style" :
+		    {
+		        "navigationBarTitleText": "Add friends/group chat",
+		        "enablePullDownRefresh": false
+		    }
+		},
+		{
+		    "path" : "pages/center/info",
+		    "style" :
+		    {
+		        "navigationBarTitleText": "Tiger Personal",
+		        "enablePullDownRefresh": true,
+				"navigationBarBackgroundColor": "#f8f8f8"
+		    }
+		},
+		{
+		    "path" : "pages/e",
+		    "style" :
+		    {
+		        "navigationBarTitleText": "Tiger Message",
+		        "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#f8f8f8"
+		    }
+		},
+		{
+		    "path" : "pages/search/add-contact",
+		    "style" :
+		    {
+		        "navigationBarTitleText": "Tiger Add friends",
+		        "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#f8f8f8"
+		    }
+		},
+		{
+		    "path" : "pages/pick-user/pick-user",
+		    "style" :
+		    {
+		        "navigationBarTitleText": "Tiger Select friends",
+		        "enablePullDownRefresh": false
+		    }
+		},
+		{
+		    "path" : "pages/center/collection",
+		    "style" :
+		    {
+		        "navigationBarTitleText": "Tiger My Collection",
+		        "enablePullDownRefresh": true
+		    }
+		},
+		{
+		    "path" : "pages/center/general-settings",
+		    "style" :
+		    {
+		        "navigationBarTitleText": "Tiger General settings",
+		        "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#f8f8f8"
+		    }
+		},
+		{
+		    "path" : "pages/center/privacy-settings",
+		    "style" :
+		    {
+		        "navigationBarTitleText": "Tiger Privacy Settings",
+		        "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#f8f8f8"
+		    }
+		},
+		{
+		    "path" : "pages/center/quick-reply",
+		    "style" :
+		    {
+		        "navigationBarTitleText": "Tiger Quick reply",
+		        "enablePullDownRefresh": false
+		    }
+		},
+		{
+		    "path" : "pages/center/report",
+		    "style" :
+		    {
+		        "navigationBarTitleText": "Tiger Feedback questions",
+		        "enablePullDownRefresh": false
+		    }
+		},
+		{
+		    "path" : "pages/center/edit-quick-reply",
+		    "style" :
+		    {
+		        "navigationBarTitleText": "Tiger Edit Quick Reply",
+		        "enablePullDownRefresh": false
+		    }
+		},
+		{
+		    "path" : "pages/address-list/top-contacts",
+		    "style" :
+		    {
+		        "navigationBarTitleText": "Tiger Top contacts",
+		        "enablePullDownRefresh": true
+		    }
+		},
+		{
+		    "path" : "pages/address-list/group-chat",
+		    "style" :
+		    {
+		        "navigationBarTitleText": "Tiger Group chat",
+		        "enablePullDownRefresh": true
+		    }
+		},
+		{
+		    "path" : "pages/session-info/notice-session-info",
+		    "style" :
+		    {
+		        "navigationBarTitleText": "Tiger Notice of application",
+		        "enablePullDownRefresh": true
+		    }
+		},
+		{
+		    "path" : "pages/session-info/report",
+		    "style" :
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false,
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+		    }
+		},
+		{
+		    "path" : "pages/session-info/notice-message-info",
+		    "style" :
+		    {
+		        "navigationBarTitleText": "Tiger Notification Message",
+		        "enablePullDownRefresh": false
+		    }
+		},
+		{
+		    "path" : "pages/center/edit-info",
+		    "style" :
+		    {
+		        "navigationBarTitleText": "Tiger Edit information",
+		        "enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+		    }
+		},
+		{
+		    "path" : "pages/session-info/chat-setting",
+		    "style" :
+		    {
+		        "navigationBarTitleText": "Tiger Chat Settings",
+		        "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#f8f8f8"
+		    }
+		},
+		{
+		    "path" : "pages/center/group_chat_users",
+		    "style" :
+		    {
+		        "navigationBarTitleText": "Tiger Group chat members",
+		        "enablePullDownRefresh": true,
+				"navigationBarBackgroundColor": "#f8f8f8"
+		    }
+		},
+		{
+		    "path" : "pages/center/user-shield",
+		    "style" :
+		    {
+		        "navigationBarTitleText": "Tiger Blocked contacts",
+		        "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#f8f8f8"
+		    }
+		},{
+		    "path" : "pages/center/group_chat_notice",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "Tiger Group Announcement",
+		        "enablePullDownRefresh": true,
+				"navigationBarBackgroundColor": "#f8f8f8"
+		    }
+		},
+		{
+		    "path" : "pages/center/post_group_chat_notice",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "Tiger Publish announcement",
+		        "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#f8f8f8"
+		    }
+		},
+		{
+		    "path" : "pages/center/group_chat_notice_users",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "Tiger User List",
+		        "enablePullDownRefresh": true,
+				"navigationBarBackgroundColor": "#f8f8f8"
+		    }
+		}
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "FastIm",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"borderStyle": "black",
+		"selectedColor": "#00328f",
+		"color": "#444444",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/icon/list.png",
+				"selectedIconPath": "static/icon/list-select.png",
+				"text": "JOBS"
+			},{
+				"pagePath": "pages/resume/index",
+				"iconPath": "static/icon/resune.png",
+				"selectedIconPath": "static/icon/resune-select.png",
+				"text": "RESUME"
+			},{
+				"pagePath": "pages/message/message",
+				"iconPath": "static/icon/news.png",
+				"selectedIconPath": "static/icon/news-select.png",
+				"text": "MESSAGE"
+			},{
+				"pagePath": "pages/center/questionnaire",
+				"iconPath": "static/icon/user.png",
+				"selectedIconPath": "static/icon/user-select.png",
+				"text": "PERSONAL"
+			}
+		]
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "index", //模式名称
+				"path": "pages/index/index", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}

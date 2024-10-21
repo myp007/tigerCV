@@ -1,0 +1,189 @@
+{
+    "name" : "TigerCV",
+    "appid" : "__UNI__DADAEC5",
+    "description" : "tigerCV App",
+    "versionName" : "1.8.70500",
+    "versionCode" : 1870500,
+    "transformPx" : false,
+    "channel_list" : [
+        {
+            "id" : "google",
+            "name" : "Google Play"
+        }
+    ],
+    /* 5+App特有相关 */
+    "app-plus" : {
+        "safearea" : {
+            "bottom" : {
+                "offset" : "auto"
+            },
+            "left" : {
+                "offset" : "auto"
+            },
+            "right" : {
+                "offset" : "auto"
+            }
+        },
+        "softinputMode" : "adjustResize",
+        "kernel" : {
+            "ios" : "WKWebview" //或者 "WKWebview"
+        },
+        "usingComponents" : true,
+        "nvueCompiler" : "uni-app",
+        "compilerVersion" : 3,
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : true,
+            "waiting" : true,
+            "autoclose" : true,
+            "delay" : 0
+        },
+        /* 模块配置 */
+        "modules" : {
+            "VideoPlayer" : {},
+            "WKWebview" : {},
+            "Push" : {},
+            "Camera" : {}
+        },
+        /* 应用发布信息 */
+        "distribute" : {
+            /* android打包配置 */
+            "android" : {
+                "targetSdkVersion" : 31,
+                "permissions" : [
+                    "<uses-feature android:name=\"android.hardware.camera\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+                    "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+                    "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
+                    "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
+                    "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
+                ]
+            },
+            /* ios打包配置 */
+            "ios" : {
+                "dSYMs" : false,
+                "privacyDescription__UNI__0B72A11__UNI__0B72A11__UNI__0B7" : {
+                    "NSPhotoLibraryUsageDescription" : "Allow mobile phone storage permissions to read and write photo albums for users to share, download photos, and save running status information",
+                    "NSCameraUsageDescription" : "Allow mobile phone storage permissions to read and write cameras for users to share photos and save running status information",
+                    "NSPhotoLibraryAddUsageDescription" : "Allow mobile phone storage permissions to read and write photo albums for users to share, download photos, and save running status information"
+                }
+            },
+            /* SDK配置 */
+            "sdkConfigs" : {
+                "push" : {},
+                "ad" : {}
+            },
+            "icons" : {
+                "android" : {
+                    "hdpi" : "unpackage/res/icons/72x72.png",
+                    "xhdpi" : "unpackage/res/icons/96x96.png",
+                    "xxhdpi" : "unpackage/res/icons/144x144.png",
+                    "xxxhdpi" : "unpackage/res/icons/192x192.png"
+                },
+                "ios" : {
+                    "appstore" : "unpackage/res/icons/1024x1024.png",
+                    "ipad" : {
+                        "app" : "unpackage/res/icons/76x76.png",
+                        "app@2x" : "unpackage/res/icons/152x152.png",
+                        "notification" : "unpackage/res/icons/20x20.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "proapp@2x" : "unpackage/res/icons/167x167.png",
+                        "settings" : "unpackage/res/icons/29x29.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "spotlight" : "unpackage/res/icons/40x40.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png"
+                    },
+                    "iphone" : {
+                        "app@2x" : "unpackage/res/icons/120x120.png",
+                        "app@3x" : "unpackage/res/icons/180x180.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "notification@3x" : "unpackage/res/icons/60x60.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "settings@3x" : "unpackage/res/icons/87x87.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png",
+                        "spotlight@3x" : "unpackage/res/icons/120x120.png"
+                    }
+                }
+            },
+            "splashscreen" : {
+                "iosStyle" : "common",
+                "useOriginalMsgbox" : false
+            }
+        },
+        "statusbar" : {
+            "immersed" : false
+        },
+        "nativePlugins" : {
+            "Rc-ChosseFile" : {
+                "__plugin_info__" : {
+                    "name" : "Android文件选择器",
+                    "description" : "调用Android文件选择器，返回正确的文件路径",
+                    "platforms" : "Android",
+                    "url" : "https://ext.dcloud.net.cn/plugin?id=4043",
+                    "android_package_name" : "com.tigercv.mm",
+                    "ios_bundle_id" : "com.tigercv.im",
+                    "isCloud" : true,
+                    "bought" : 1,
+                    "pid" : "4043",
+                    "parameters" : {}
+                }
+            }
+        }
+    },
+    /* 快应用特有相关 */
+    "quickapp" : {},
+    /* 小程序特有相关 */
+    "mp-weixin" : {
+        "appid" : "wx4552387af63efaec",
+        "setting" : {
+            "urlCheck" : false
+        },
+        "usingComponents" : true
+    },
+    "mp-alipay" : {
+        "usingComponents" : true
+    },
+    "mp-baidu" : {
+        "usingComponents" : true
+    },
+    "mp-toutiao" : {
+        "usingComponents" : true
+    },
+    "h5" : {
+        "template" : "template.h5.html",
+        "router" : {
+            "mode" : "hash",
+            "base" : "/h5/"
+        },
+        "devServer" : {
+            "https" : false,
+            "proxy" : {
+                "/apitest" : {
+                    "target" : "http://192.168.211.194:8001/v1_0", //请求的目标域名
+                    "changeOrigin" : true,
+                    "secure" : false,
+                    "pathRewrite" : {
+                        "^/apitest" : "/"
+                    }
+                }
+            }
+        }
+    },
+    "locale" : "en"
+}
+/* 快应用特有相关 *//* 小程序特有相关 */
+
